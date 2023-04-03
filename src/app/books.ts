@@ -1,4 +1,4 @@
-interface Book {
+export interface Book {
   author: string;
   book_image: string;
   book_image_width: number;
@@ -12,7 +12,7 @@ interface Book {
   title: string;
 }
 
-const books: Book[] = [
+export const books: Book[] = [
   {
     "author": "Colleen Hoover",
     "book_image": "https:\/\/storage.googleapis.com\/du-prd\/books\/images\/9781668001226.jpg",

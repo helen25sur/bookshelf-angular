@@ -1,1 +1,11 @@
-<p>books-list works!</p>
+<div *ngIf="booksList">
+  <!-- {{ booksList | json }} -->
+  <div *ngFor="let book of booksList">
+    <h2>{{ book.title }}</h2>
+    <h3>{{ book.author }}</h3>
+    <img [src]="book['book_image']" [alt]="book.title">
+    <p>{{ book.description }}</p>
+    <p>Publisher: <b>{{ book.publisher }}</b></p>
+    <p>Contributor: {{ book.contributor }}</p>
+  </div>
+</div>
