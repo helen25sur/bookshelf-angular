@@ -2,7 +2,7 @@
 
 ## Scheme of this application
 
-image: https://
+![Bookshelf-Angular drawio](https://user-images.githubusercontent.com/65970892/229553219-c2a631b9-87ba-4e27-ba05-3b9e0008eccf.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
