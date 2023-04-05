@@ -1,4 +1,21 @@
-<h1>{{ title }} app is running!</h1>
-<button mat-raised-button color="primary">Primary</button>
-<button mat-raised-button color="accent">Accent</button>
-<app-books-list></app-books-list>
+<mat-sidenav-container fullscreen>
+  <mat-toolbar color="primary">
+    <span>Bookshelf-Angular</span>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">
+        <mat-icon>book</mat-icon>
+        Books</a>
+      <a mat-list-item routerLink="/wishlist">
+        <mat-icon>library_books</mat-icon>
+        Wishlist</a>
+      <a mat-list-item routerLink="/readbooks">
+        <mat-icon>bookmarks</mat-icon>
+        Read Books</a>
+      <a mat-list-item routerLink="/sign-in">
+        <mat-icon>account_box</mat-icon>
+        SignIn</a>
+    </mat-nav-list>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+mat-card {
+  max-width: 400px;
+}
+
+mat-card-header {
+  flex-direction: column;
+}
+
+h2, h3 {
+  margin: 0.5rem 0;
+}
