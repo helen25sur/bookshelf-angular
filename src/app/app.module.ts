@@ -8,6 +8,8 @@ import { BooksListComponent } from './books-list/books-list.component';
 import { SearchBooksComponent } from './books-list/search-books/search-books.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { MaterialModule } from './material/material.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { MaterialModule } from './material/material.module';
     BooksListComponent,
     SearchBooksComponent,
     BookDetailsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

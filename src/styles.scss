@@ -90,3 +90,7 @@ $theme: mat.define-dark-theme((color: (primary: $primary,
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Montserrat, "Helvetica Neue", sans-serif; }
+
+app-footer {
+  background-color: mat.get-color-from-palette($primary, 900);
+}

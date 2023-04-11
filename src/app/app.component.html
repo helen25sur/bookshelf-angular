@@ -1,21 +1,5 @@
 <mat-sidenav-container fullscreen>
-  <mat-toolbar color="primary">
-    <span>Bookshelf-Angular</span>
-
-    <mat-nav-list>
-      <a mat-list-item routerLink="/">
-        <mat-icon>book</mat-icon>
-        Books</a>
-      <a mat-list-item routerLink="/wishlist">
-        <mat-icon>library_books</mat-icon>
-        Wishlist</a>
-      <a mat-list-item routerLink="/readbooks">
-        <mat-icon>bookmarks</mat-icon>
-        Read Books</a>
-      <a mat-list-item routerLink="/sign-in">
-        <mat-icon>account_box</mat-icon>
-        SignIn</a>
-    </mat-nav-list>
-  </mat-toolbar>
+  <app-header></app-header>
   <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </mat-sidenav-container>

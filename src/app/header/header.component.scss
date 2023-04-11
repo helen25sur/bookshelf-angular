@@ -1,0 +1,17 @@
+mat-toolbar {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+mat-nav-list {
+  display: flex;
+  margin-left: auto;
+}
+
+a[mat-list-item] {
+  width: max-content;
+}
+
+mat-icon {
+  vertical-align: middle;
+}
