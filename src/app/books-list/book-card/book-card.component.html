@@ -1,0 +1,14 @@
+<mat-card>
+  <a class="card-link" routerLink="books/{{book.primary_isbn13}}" >
+    <mat-card-header>
+      <h2>{{ book.title }}</h2>
+      <h3>{{ book.author }}</h3>
+    </mat-card-header>
+    <img mat-card-image [src]="book['book_image']" [alt]="book.title">
+    <mat-card-content>
+      <p>{{ book.description }}</p>
+      <p>Publisher: <b>{{ book.publisher }}</b></p>
+      <p>Contributor: {{ book.contributor }}</p>
+    </mat-card-content>
+  </a>
+</mat-card>

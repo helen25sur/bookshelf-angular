@@ -1,19 +1,7 @@
 <div class="container">
 
   <div *ngIf="booksList" class="books-list">
-    <!-- {{ booksList | json }} -->
-    <mat-card *ngFor="let book of booksList">
-      <mat-card-header>
-        <h2>{{ book.title }}</h2>
-        <h3>{{ book.author }}</h3>
-      </mat-card-header>
-      <img mat-card-image [src]="book['book_image']" [alt]="book.title">
-      <mat-card-content>
-        <p>{{ book.description }}</p>
-        <p>Publisher: <b>{{ book.publisher }}</b></p>
-        <p>Contributor: {{ book.contributor }}</p>
-      </mat-card-content>
-    </mat-card>
+    <app-book-card *ngFor="let book of booksList" [book]="book"></app-book-card>
   </div>
 </div>
 

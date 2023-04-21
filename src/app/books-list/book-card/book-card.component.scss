@@ -1,0 +1,36 @@
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+mat-card>.card-link {
+  padding: 1rem;
+  // max-width: 600px;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+  "header header"
+   "image content";
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 1rem;
+}
+
+mat-card-header {
+  flex-direction: column;
+  align-items: center;
+  grid-area: header;
+}
+
+h2, h3 {
+  margin: 0.5rem 0;
+}
+
+img[mat-card-image] {
+  grid-area: image;
+  max-width: 100%;
+}
+
+mat-card-content {
+  grid-area: content;
+}
