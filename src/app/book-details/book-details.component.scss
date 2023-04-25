@@ -1,5 +1,33 @@
 .container {
   max-width: 1400px;
+  min-height: 70vh;
   margin: 3rem auto;
   padding: 1rem;
 }
+
+.book {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+}
+
+.book-details_image {
+  flex-basis: 20%;
+  @media screen and (max-width: 850px) {
+    flex-basis: 100%;
+    width: 50%;
+  }
+}
+
+.book-details_content {
+  flex-basis: 70%;
+  @media screen and (max-width: 850px) {
+    flex-basis: 100%;
+  }
+}
+

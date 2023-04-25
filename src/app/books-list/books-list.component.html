@@ -1,7 +1,9 @@
 <div class="container">
-
-  <div *ngIf="booksList" class="books-list">
-    <app-book-card *ngFor="let book of booksList" [book]="book"></app-book-card>
-  </div>
+  <mat-tab-group (selectedTabChange)="changeTab($event)">
+    <mat-tab *ngFor="let name of listNames" [label]="name.label" encoded="name.name_encoded">
+      <div *ngIf="booksList" class="books-list">
+        <app-book-card *ngFor="let book of booksList" [book]="book"></app-book-card>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
 </div>
-

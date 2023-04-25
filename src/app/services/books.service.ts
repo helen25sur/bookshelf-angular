@@ -10,7 +10,7 @@ export class BooksService {
 
   #apiKey = 'Si3mxXDRuV3jYysE1gCnawFbqpi7LGnk';
 
-  #apiUrl = 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json';
+  #apiUrl = 'https://api.nytimes.com/svc/books/v3/lists/current/';
 
   #googleBookUrl = 'https://www.googleapis.com/books/v1/volumes';
 
@@ -22,8 +22,8 @@ export class BooksService {
     })
   }
 
-  getOneLastList(): Observable<BookInList[] | any> {
-    return this.http.get(`${this.#apiUrl}?api-key=${this.#apiKey}`, { headers: this.httpOptions.headers })
+  getOneLastList(nameList: string): Observable<BookInList[] | any> {
+    return this.http.get(`${this.#apiUrl}${nameList}.json?api-key=${this.#apiKey}`, { headers: this.httpOptions.headers })
   }
 
   getBookByISBNFromGoogle(isbn: string): Observable<BookFromISBN | any> {

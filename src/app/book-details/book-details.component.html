@@ -2,13 +2,16 @@
   {{ book | json }}
 </div> -->
 
-<div class="container" *ngIf="book">
-  <img [src]="book.imageLinks.thumbnail" [alt]="book.title">
-  <h1>{{ book.title }}</h1>
-  <div *ngFor="let author of book.authors">
-    <h2>{{ author }}</h2>
+<div class="container book" *ngIf="book">
+  <img class="book-details_image" [src]="book.imageLinks.thumbnail" [alt]="book.title">
+
+  <div class="book-details_content">
+    <h1>{{ book.title }}</h1>
+    <div *ngFor="let author of book.authors">
+      <h2>{{ author }}</h2>
+    </div>
+    <h3>{{ book.publisher }}</h3>
+    <h4>{{ book.publishedDate | date }}</h4>
+    <p>{{ book.description }}</p>
   </div>
-  <h3>{{ book.publisher }}</h3>
-  <h4>{{ book.publishedDate | date }}</h4>
-  <p>{{ book.description }}</p>
 </div>
